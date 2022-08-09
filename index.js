@@ -1,9 +1,9 @@
-import chalk from 'chalk';
+import { NONAME } from 'dns';
 import fs from 'fs';
 
 function trataErro(erro) 
 {
-    throw new Error( chalk.red(erro.code, 'não há arquivo'));
+    throw new Error(erro.code, 'Não há arquivo no caminho');
 }
 
 function extraiLinks(texto) {
